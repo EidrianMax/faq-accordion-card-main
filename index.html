@@ -1,40 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="faq-card">
+        <img
+          class="faq-card__box-desktop"
+          src="./images/illustration-box-desktop.svg"
+        />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | FAQ Accordion Card</title>
+        <div class="faq-card__header">
+          <div class="illustration-mobile faq-card__illustration-mobile">
+            <img
+              class="illustration-mobile__women"
+              src="./images/illustration-woman-online-mobile.svg"
+            />
+            <img
+              class="illustration-mobile__pattern"
+              src="./images/bg-pattern-mobile.svg"
+            />
+          </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  How many team members can I invite?
-  You can invite up to 2 additional users on the Free plan. There is no limit on 
-  team members for the Premium plan.
+          <div class="illustration-desktop faq-card__illustration-desktop">
+            <img
+              class="illustration-desktop__women"
+              src="./images/illustration-woman-online-desktop.svg"
+            />
+            <img
+              class="illustration-desktop__pattern"
+              src="./images/bg-pattern-desktop.svg"
+            />
+          </div>
+        </div>
 
-  What is the maximum file upload size?
-  No more than 2GB. All files in your account must fit your allotted storage space.
+        <div class="faq-card__body">
+          <h1 class="faq-card__title">FAQ</h1>
 
-  How do I reset my password?
-  Click “Forgot password” from the login page or “Change password” from your profile page.
-  A reset link will be emailed to you.
+          <div class="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-item__header">
+                <button class="accordion-item__button collapsed">
+                  How many team memmbers can I invite
+                </button>
+              </h2>
+              <div class="accordion-item__body">
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premiun plan.
+              </div>
+            </div>
 
-  Can I cancel my subscription?
-  Yes! Send us a message and we’ll process your request no questions asked.
+            <div class="accordion-item">
+              <h2 class="accordion-item__header">
+                <button class="accordion-item__button collapsed">
+                  What is the maximum file upload size?
+                </button>
+              </h2>
+              <div class="accordion-item__body">
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </div>
+            </div>
 
-  Do you provide additional support?
-  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            <div class="accordion-item">
+              <h2 class="accordion-item__header">
+                <button class="accordion-item__button collapsed">
+                  How do I reset my password?
+                </button>
+              </h2>
+              <div class="accordion-item__body">
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </div>
+            </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+            <div class="accordion-item">
+              <h2 class="accordion-item__header">
+                <button class="accordion-item__button collapsed">
+                  Can I cancel my subscription?
+                </button>
+              </h2>
+              <div class="accordion-item__body">
+                Yes! Send us a message and we'll process your request no
+                questions asked.
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-item__header">
+                <button class="accordion-item__button collapsed">
+                  Do you provide additional support?
+                </button>
+              </h2>
+              <div class="accordion-item__body">
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
